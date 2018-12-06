@@ -1,59 +1,61 @@
 .calculation
-  padding: 60px 0
+  background: 
+    image: url('../img/calc_bg.jpg')
+    repeat: no-repeat
+    //size: contain
+    position: center 
 .calculation-container
-  height: 660px
-  display: flex  
-  //margin:  auto  
-.calculation-wrap
-  display: flex  
-  background-color: #ffc000
-  padding-left: 250px
-.calculation-text
-  width: 650px
-  height: 450px
-  margin-left: 320px
-  margin-top: 70px
-  margin-right: 50px
-  
-.calculation-text__title
-  //width: 515px
-  font-family: "Museo Sans Cyrl -700"
-  font-size: 24px
-  color: #000000
-  text-align: justify
-     
-.calculation-text__subtitle
-  font-size: 20px
-  display: block
-  margin-top: 50px
-  margin-bottom: 50px
-
-.calculation-text__list
-  list-style-type: none
-  line-height: 32px
-  font-family: "Museo Sans Cyrl -500"
-  font-size: 18px
-  font-weight: 400
-  margin-left: -12px
-.calculation-text__item
-  position: relative
-  padding-left: 30px
-  counter-increment: item
-  margin-bottom: 30px
-.calculation-text__item:before 
-  content: counter(item)"."
-  position: absolute
-  left: -30px
   display: flex
-  justify-content: center
-  align-items: center
-  width: 32px
-  height: 32px
-  border: 2px solid #000
-  border-radius: 50%
+.calculation
+  &-text
+    padding-top: 90px
+    padding-right: 200px  
+    &__title
+      font-family: "Museo Sans Cyrl -700"
+      font-size: 24px
+      color: #000000  
+      font-size: 22px
+      font-weight: 400
+      line-height: 33px      
+    &__subtitle
+      font-size: 20px
+      display: block
+      margin-top: 50px
+      margin-bottom: 90px
+.calculation
+  &-text
+    &__list
+      list-style-type: none
+      line-height: 32px
+      font-family: "Museo Sans Cyrl -500"
+      font-size: 18px
+      font-weight: 400
+      margin-left: -12px
+      
+.calculation
+  &-text
+    &__item
+      position: relative
+      padding-left: 30px
+      counter-increment: item
+      margin-bottom: 15px
+.calculation
+  &-text
+    &__item
+      &:before 
+        content: counter(item)"."
+        position: absolute
+        left: -30px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 32px
+        height: 32px
+        border: 2px solid #000
+        border-radius: 50%
 
 
-//.calculation-text__list
+//.calculation-text__list  это другой вариант, но не до конца стилизованный
 //  margin: 0
 //  padding: 0
 //  list-style: none
@@ -81,54 +83,58 @@
 //  left: -20px  // поправила не 0 а -20
 //  top: 0  
 
-.calculation-form
-  width: 600px
-  padding: 0 50px
-  display: flex
-  flex-direction: column
-  
-.calculation-form__title
-  //width: 336px
-  +bold
-  font-size: 24px
-  font-weight: 400
-  line-height: 33px
-  color: #333333 
-  margin-bottom: 45px 
-  text-align: center
-.calculation-form__subtitle
-  display: block
-  margin-bottom: 50px 
-  font-family: "Museo Sans Cyrl -300"
-  font-size: 16px
-  font-weight: 400
-  line-height: 35px
-  color: #333333
-  text-align: center
-  
-.calculation__input-1
-  width: 44%
-  margin-right: 30px
-  margin-bottom: 30px
-.calculation__input-2    
-  width: 44%
-  margin-bottom: 30px
-.calculation__button
-  padding: 28px
-  display: block
-  width: 100%
-  font-size: 16px
-  margin-bottom: 30px
-  text-align: center
+.calculation
+  &-form
+    max-width: 600px
+    display: flex
+    flex-direction: column
+    margin-bottom: 50px
+    padding-left: 20px
+    &__title
+      +bold
+      font-size: 22px
+      font-weight: 400
+      line-height: 33px
+      color: #333333 
+      margin-bottom: 52px 
+      margin-top: 100px
+      text-align: center
+    &__subtitle
+      display: block
+      margin-bottom: 50px 
+      font-family: "Museo Sans Cyrl -300"
+      font-size: 16px
+      font-weight: 400
+      line-height: 35px
+      color: #333333
+      text-align: center
+    &__phone
+      font-family: "Museo Sans Cyrl -300"
+      font-size: 15px
+      font-weight: 400
+      line-height: 24px
+      color: #333333
+      text-align: center
+  &__input         
+    &-1
+      width: 370px
+      height: 65px
+      margin-bottom: 15px
+      margin-left: 20px
+    &-2    
+      width: 370px
+      height: 65px
+      margin-bottom: 30px
+      margin-left: 20px
+  &__button
+    padding: 28px
+    display: block
+    width: 370px
+    height: 65px
+    font-size: 16px
+    margin-bottom: 33px
+    margin-left: 20px
+    text-align: center
 
-
-
-.calculation-form__phone
-  font-family: "Museo Sans Cyrl -300"
-  font-size: 15px
-  font-weight: 400
-  line-height: 24px
-  color: #333333
-  text-align: center
 
 

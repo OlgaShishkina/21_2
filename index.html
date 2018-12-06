@@ -279,68 +279,58 @@
     });  
   </script> 
 
-  <div class="calculation">
-    <div class="calculation-container">
-      <div class="calculation-wrap">
-
-        <div class="calculation-text">
-          <h1 class="calculation-text__title">
-            Мы можем озвучить Вам примерную стоимость
-            работы и материалов по телефону                      
-            <span class="calculation-text__subtitle">Для этого нужно ответить на 4 вопроса:</span>
-          </h1>
-
-      <!-- <div class="calculation-text__list-wrap"></div> -->       
-          <ol type="1" class="calculation-text__list">
-            <li class="calculation-text__item">
-              <span class="calculation-text__p "> Какова площадь помещения?</span>
-            </li>
-            <li class="calculation-text__item">
-              <span class="calculation-text__p">У Вас новостройка или вторичное жилье?</span>
-            </li>  
-            <li class="calculation-text__item">
-                <span class="calculation-text__p">Где находится помещение, в котором будет 
-                  производиться ремонт?</span>
-            </li>
-            <li class="calculation-text__item">
-              <span class="calculation-text__p ">Назначение помещения?</span>
-            </li> 
-          </ol> 
-        </div> <!-- calculation-text__list wrap--> 
-    </div>  <!-- calculation-text-->  
-   
-    
-    
-    
-    
-
-
-    <div class="calculation-form">
-    <!-- <div class="calculation-form_container"> --> 
-       <!-- <div class="calculation-form_container_box"> -->
-          <h2 class="calculation-form__title">
-            Оставьте заявку на бесплатный расчет ремонта по телефону
-          </h2>
-          <div class="calculation-form__subtitle">
-            Для этого заполните форму ниже
-          </div>
-          <form action="mailer/smart.php" method="POST" class="calculation-input">
-            <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
-            <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
-            <button type="submit" class="button  calculation__button" >Рассчитать стоимость</button>
-          </form>
-
-          <div class="calculation-form__phone">
-              Мы перезвоним Вам в течение 60 секунд         
-          </div> <!--calculation-form__phone -->
-
-      <!--  </div>  calculation-form_container_box-->
-    <!--  </div>  calculation-form_container-->    
-    </div><!--calculation-form -->
-
-  </div><!---calculation-wrap-->
-  </div><!-- container-->
-</div> <!--calculation-->
+  <div class="calculation"> <!-- создала новую секцию-->
+    <div class="calculation-container container">
+    <!-- это обертка для этой секции для ограничения контента и выравнивания его по центру-->
+      <div class="calculation-text"> 
+      <!-- это часть слева, внутри нее располагается контент в  виде заголовка подзаголовка и списка--> 
+        <h1 class="calculation-text__title">        
+          Мы можем озвучить Вам примерную стоимость
+          работы и материалов по телефону                      
+          <span class="calculation-text__subtitle">Для этого нужно ответить на 4 вопроса:</span>
+        </h1>         
+        <ol type="1" class="calculation-text__list"> <!-- это  div  для всего списка-->
+          <li class="calculation-text__item">
+          <!-- это элемент списка, к нему я сделаю пвсевдоэлемент before для размещения кружочков с цифрами-->
+            <span class="calculation-text__p "> <!-- это сам текст элемента списка-->
+            Какова площадь помещения?
+            </span>
+          </li>
+          <li class="calculation-text__item">
+            <span class="calculation-text__p">
+            У Вас новостройка или вторичное жилье?
+            </span>
+          </li>  
+          <li class="calculation-text__item">
+            <span class="calculation-text__p">
+              Где находится помещение, в котором будет производиться ремонт?
+            </span>
+          </li>
+          <li class="calculation-text__item">
+            <span class="calculation-text__p ">
+              Назначение помещения?
+            </span>
+          </li> 
+        </ol> 
+      </div> <!-- calculation-text закончилась часть слева-->
+      <div class="calculation-form">  <!-- это часть справа-->
+        <h2 class="calculation-form__title">
+          Оставьте заявку на бесплатный расчет ремонта по телефону
+        </h2>
+        <div class="calculation-form__subtitle">
+          Для этого заполните форму ниже
+        </div> <!-- наверное можно было сделать span?-->
+        <form action="mailer/smart.php" method="POST" class="calculation-input"> <!-- это секция  с окном ввода данных-->
+          <input type="text" name="fio" class="input user_name calculation__input-1" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" class="input user_phone calculation__input-2" placeholder="Ваш телефон" required>
+          <button type="submit" class="button  calculation__button" >Рассчитать стоимость</button>
+        </form>
+        <div class="calculation-form__phone">  <!-- это div для телефона, мы его выделяем в отдельный div вот зачеи? -->
+          Мы перезвоним Вам в течение 60 секунд         
+          </div> <!--calculation-form__phone -->      
+      </div><!--calculation-form -->
+    </div><!-- container-->
+  </div> <!--calculation-->
 
 <script>
   $('form').submit(function(event) {

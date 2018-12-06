@@ -784,7 +784,7 @@ template {
 
 .portfolio {
   background-color: #f5f5f5;
-  background: url("../img/bg_slider.png") no-repeat;
+  background: url("/img/bg_slider.png") no-repeat;
   padding: 100px 0;
 }
 
@@ -810,7 +810,7 @@ template {
 
 .arrow_right {
   left: 50%;
-  background: url("../img/left-arrow.png") no-repeat center;
+  background: url("../img/right_arrow.png") no-repeat center;
   background-size: 100%;
   -webkit-transform: translateX(15px);
           transform: translateX(15px);
@@ -821,7 +821,7 @@ template {
   -webkit-transform: translateX(-45px);
           transform: translateX(-45px);
   margin-left: -15px;
-  background: url("../img/left-arrow2.png") no-repeat center;
+  background: url("../img/left_arrow.png") no-repeat center;
   background-size: 100%;
 }
 
@@ -832,44 +832,36 @@ template {
 }
 
 .calculation {
-  padding: 60px 0;
+  background-image: url("../img/calc_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .calculation-container {
-  height: 660px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.calculation-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #ffc000;
-  padding-left: 250px;
 }
 
 .calculation-text {
-  width: 650px;
-  height: 450px;
-  margin-left: 320px;
-  margin-top: 70px;
-  margin-right: 50px;
+  padding-top: 90px;
+  padding-right: 200px;
 }
 
 .calculation-text__title {
   font-family: "Museo Sans Cyrl -700";
   font-size: 24px;
   color: #000000;
-  text-align: justify;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
 }
 
 .calculation-text__subtitle {
   font-size: 20px;
   display: block;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .calculation-text__list {
@@ -885,7 +877,7 @@ template {
   position: relative;
   padding-left: 30px;
   counter-increment: item;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .calculation-text__item:before {
@@ -908,8 +900,7 @@ template {
 }
 
 .calculation-form {
-  width: 600px;
-  padding: 0 50px;
+  max-width: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,15 +908,18 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 50px;
+  padding-left: 20px;
 }
 
 .calculation-form__title {
   font-family: 'Museo Sans Bold', sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 33px;
   color: #333333;
-  margin-bottom: 45px;
+  margin-bottom: 52px;
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -940,32 +934,37 @@ template {
   text-align: center;
 }
 
-.calculation__input-1 {
-  width: 44%;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.calculation__input-2 {
-  width: 44%;
-  margin-bottom: 30px;
-}
-
-.calculation__button {
-  padding: 28px;
-  display: block;
-  width: 100%;
-  font-size: 16px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 .calculation-form__phone {
   font-family: "Museo Sans Cyrl -300";
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #333333;
+  text-align: center;
+}
+
+.calculation__input-1 {
+  width: 370px;
+  height: 65px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.calculation__input-2 {
+  width: 370px;
+  height: 65px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.calculation__button {
+  padding: 28px;
+  display: block;
+  width: 370px;
+  height: 65px;
+  font-size: 16px;
+  margin-bottom: 33px;
+  margin-left: 20px;
   text-align: center;
 }
 
