@@ -789,7 +789,7 @@ template {
 }
 
 .slider__item {
-  margin-right: 20px;
+  margin: auto;
   text-align: center;
 }
 
