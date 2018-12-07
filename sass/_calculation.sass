@@ -6,10 +6,11 @@
     position: center 
 .calculation-container
   display: flex
+  justify-content: space-between  
 .calculation
   &-text
-    padding-top: 90px
-    padding-right: 200px  
+    max-width: 504px
+    padding-top: 90px       
     &__title
       font-family: "Museo Sans Cyrl -700"
       font-size: 24px
@@ -49,8 +50,8 @@
         display: flex
         justify-content: center
         align-items: center
-        width: 32px
-        height: 32px
+        width: 35px
+        height: 35px
         border: 2px solid #000
         border-radius: 50%
 
@@ -85,11 +86,11 @@
 
 .calculation
   &-form
-    max-width: 600px
+    max-width: 370px
     display: flex
     flex-direction: column
     margin-bottom: 50px
-    padding-left: 20px
+   
     &__title
       +bold
       font-size: 22px
@@ -119,13 +120,12 @@
     &-1
       width: 370px
       height: 65px
-      margin-bottom: 15px
-      margin-left: 20px
+      margin-bottom: 15px     
     &-2    
       width: 370px
       height: 65px
       margin-bottom: 30px
-      margin-left: 20px
+      
   &__button
     padding: 28px
     display: block
@@ -133,7 +133,6 @@
     height: 65px
     font-size: 16px
     margin-bottom: 33px
-    margin-left: 20px
     text-align: center
 
 
