@@ -90,7 +90,9 @@
     width: 270px 
   .section-title_center
     padding: 60px
-    font-size: 27px   
+    font-size: 27px 
+  .calculation-text   
+    width: 454px    
   
 
 @media (max-width: 601px)
@@ -109,6 +111,8 @@
   .section-title_center
     padding: 30px
     font-size: 27px 
+  .calculation-text   
+    width: 454px
 
 
 @media (max-width: 590px)
@@ -124,12 +128,11 @@
   .section-title_center
     padding: 25px
     font-size: 25px
-  .calculation
-    &-text 
-      width: 404px
-      padding-bottom: 70px
-    &-form 
-      margin-bottom: 0  
+  .calculation-text   
+    width: 404px
+      //padding-bottom: 70px
+    //&-form 
+      //margin-bottom: 0  
 
 
 @media (max-width: 575px)
@@ -221,7 +224,7 @@
     padding: 25px
     font-size: 25px 
   .calculation-text
-    width: 300px       
+    width: 400px       
 
 @media (max-width: 450px)
   .container
@@ -238,31 +241,60 @@
     font-size: 25px  
 
 @media (max-width: 400px)
+  .main
+    padding: 25px 0
+    &-text 
+      &__title
+        line-height: 30px
+        font-size: 22px
+        margin-bottom: 30px
+      &__title span
+        font-size: 18px
+        line-height: 24px
+  .feedback
+    padding: 25px
+  .form__title 
+    line-height: 26px
+    margin-bottom: 25px
+  .form__subtitle
+    line-height: 26px
+    margin-bottom: 30px
+  .hidden-xs
+    display: none
   .form__input-1
-    margin-right: 30px
-    margin-bottom: 30px
+    margin-bottom: 18px
     width: 100%
+    height: 65px
   .form__input-2
-    margin-bottom: 30px
+    margin-bottom: 20px
     width: 100%
+    height: 65px
   .section-title_center
     padding: 25px
-    font-size: 20px    
+    font-size: 20px 
+  .portfolio
+    padding-top: 40px  
   .calculation__input-1
-    width: 300px
+    width: 100%
+    height: 55px
   .calculation__input-2   
-    width: 300px
+    width: 100%
+    height: 55px
   .calculation__button    
-    width: 300px
+    width: 100%
+    height: 55px
+    padding: 14px
   .calculation-text__item
-   text-align: justify
+    text-align: justify
   .calculation-text__list 
     line-height: 24px
+  .calculation-form
+    margin-bottom: 0 
   .calculation-form__title
     font-size: 20px
     line-height: 24px
-    margin-top: 30px
-    margin-bottom: 20px  
+    //margin-top: 30px
+    //margin-bottom: 20px  
   .calculation-form__subtitle
     font-size: 18px
     line-height: 24px
@@ -270,10 +302,31 @@
     width: 300px
     padding-bottom: 40px
     &__title
+      font-size: 22px
+      line-height: 30px;
+    &__subtitle
       line-height: 24px
-      font-size: 18px 
-    
-
+      font-size: 20px
+      margin-bottom: 30px
+  .form__button
+    height: 60px
+    padding: 14px
+  .section-title     
+    line-height: 30px
+  .calculation-text__item:before 
+    width: 32px
+    height: 32px
+  .calculation-form__phone 
+    margin-bottom: 40px
+  .calculation-text__subtitle 
+    margin-top: 20px
+    margin-bottom: 30px
+  .calculation-text__item 
+    padding-left: 20px
+  .form__item__text-1 
+    margin: 10px 0 
+  .calculation__button
+    margin: 19px auto  
 
 
   /*  border-radius: 50%*/
