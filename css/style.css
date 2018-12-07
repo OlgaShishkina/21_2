@@ -1061,16 +1061,31 @@ img {
             align-items: center;
   }
   .calculation-text {
+    width: 504px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    z-index: 1;
+  }
+  .calculation-text__subtitle {
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
   .calculation-text__list {
     text-align: left;
   }
   .calculation-form__title {
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .calculation-form__subtitle {
+    margin-bottom: 30px;
+  }
+  .calculation-form__phone {
+    margin-bottom: 80px;
   }
 }
 
@@ -1151,6 +1166,13 @@ img {
   .section-title_center {
     padding: 25px;
     font-size: 25px;
+  }
+  .calculation-text {
+    width: 404px;
+    padding-bottom: 70px;
+  }
+  .calculation-form {
+    margin-bottom: 0;
   }
 }
 
@@ -1283,6 +1305,9 @@ img {
     padding: 25px;
     font-size: 25px;
   }
+  .calculation-text {
+    width: 300px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1342,6 +1367,14 @@ img {
   .calculation-form__subtitle {
     font-size: 18px;
     line-height: 24px;
+  }
+  .calculation-text {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+  .calculation-text__title {
+    line-height: 24px;
+    font-size: 18px;
   }
   /*  border-radius: 50%*/
   /*  border: 2px solid $item-phone*/

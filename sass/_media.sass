@@ -29,11 +29,10 @@
     margin: 0 auto    
   .slider
     margin-right: -20px //20
-  .calculation
+  .calculation    
     background-position: top right
     background-size: cover 
     position: relative
-
     &:before
       content: ''
       left: 0
@@ -42,7 +41,6 @@
       height: 50%
       background-color: #ffc000
       position: absolute
-
   .calculation-container     
     flex-direction: column
     justify-content: space-between   
@@ -51,11 +49,22 @@
     &-text 
       width: 504px
       order: 2   // я поменяла порядок элементов , это свойство flex   
-      text-align: center  
+      text-align: center 
+      padding-top: 40px
+      padding-bottom: 70px
+      z-index: 1 
+      &__subtitle
+        margin-top: 30px
+        margin-bottom: 50px
       &__list
         text-align: left 
   .calculation-form__title 
-    margin-top: 50px    
+    margin-top: 30px
+    margin-bottom: 20px 
+  .calculation-form__subtitle
+    margin-bottom: 30px   
+  .calculation-form__phone
+    margin-bottom: 80px 
  
 @media (max-width: 768px)
   .container
@@ -104,8 +113,7 @@
 
 @media (max-width: 590px)
   .container
-    width: 85%
-  
+    width: 85%  
   .form__input-1
     margin-right: 30px
     margin-bottom: 30px
@@ -116,6 +124,13 @@
   .section-title_center
     padding: 25px
     font-size: 25px
+  .calculation
+    &-text 
+      width: 404px
+      padding-bottom: 70px
+    &-form 
+      margin-bottom: 0  
+
 
 @media (max-width: 575px)
   .container
@@ -204,12 +219,13 @@
     width: 100%  
   .section-title_center
     padding: 25px
-    font-size: 25px     
+    font-size: 25px 
+  .calculation-text
+    width: 300px       
 
 @media (max-width: 450px)
   .container
-    width: 85% 
-       
+    width: 85%        
   .form__input-1
     margin-right: 30px
     margin-bottom: 30px
@@ -250,6 +266,12 @@
   .calculation-form__subtitle
     font-size: 18px
     line-height: 24px
+  .calculation-text
+    width: 300px
+    padding-bottom: 40px
+    &__title
+      line-height: 24px
+      font-size: 18px 
     
 
 
